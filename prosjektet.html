@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>HVLTopia, en bærekraftig fremtid.</title>
 </head>
 
 <body>
-    <nav> <!-- Start av navigasjonsbar -->
+    <nav class="navbar"> <!-- Start av navigasjonsbar -->
         <a href="hjem.html">
-            <h1><b>HVL</b>Topia</h1>
+            <h2><b>HVL</b>Topia</h2>
         </a>
         <menu>
             <li><a href="prosjektet.html">Prosjektet</a></li>
@@ -19,7 +20,7 @@
             <li><a href="Kontakt.html">Kontakt</a></li>
         </menu>
     </nav> <!-- Slutt av navigasjonsbar -->
-    <div></div> <!-- Dette er en del av separator (krever css) -->
+    <div class="separator"></div> <!-- Dette er en del av separator (krever css) -->
     <div>
         <h2>Prosjektet</h2>
         <p>Vårt mål gjennom prosjektet er å danne en by som er mer fremtidsrettet og bærekraftig enn byer vi ser i
@@ -35,33 +36,33 @@
         <h2>Vi jobber for å spare energi</h2>
         <img src="./energi.jpg" alt="Vindmøller">
     </div>
-    <footer> <!-- Start av footer -->
+    <footer class="footer"> <!-- Start av footer -->
         <a href="hjem.html">
-            <h2>HVLTOPIA</h2>
+            <h3>HVLTOPIA</h3>
         </a>
         <div>
-            <h3>hvltopia</h3>
-            <menu>
-                <li><a href="prosjektet.html">Prosjektet</a></li>
-                <li><a href="barekraft.html">Bærekraft</a></li>
-                <li><a href="losninger.html">Løsninger</a></li>
-                <li><a href="Kontakt.html">Kontakt</a></li>
-            </menu>
+            <h4>hvltopia</h3>
+                <menu>
+                    <li><a href="prosjektet.html">Prosjektet</a></li>
+                    <li><a href="barekraft.html">Bærekraft</a></li>
+                    <li><a href="losninger.html">Løsninger</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+                </menu>
         </div>
         <div>
-            <h3>kontakt</h3>
-            <menu>
-                <li><a href="#">Epost</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Instagram</a></li>
-            </menu>
+            <h4>kontakt</h3>
+                <menu>
+                    <li><a href="#">Epost</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </menu>
         </div>
-        <div>
-            <h3>få nyheter fra oss!</h3>
-            <div>
-                <input type="text" placeholder="Epost">
-                <button>Send</button>
-            </div>
+        <div class="footer-container">
+            <h4>få nyheter fra oss!</h3>
+                <div class="binput">
+                    <input type="text" placeholder="Epost">
+                    <button>Send</button>
+                </div>
         </div>
     </footer> <!-- Slutt av footer -->
 </body>
