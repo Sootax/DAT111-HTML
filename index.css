@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(fonts/Outfit-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    width: 60%;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a:hover {
+    color: rgb(98, 98, 98);
+    transition: all 0.2s;
+}
+
+.navbar {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.navbar menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;    
+    gap: 50px;
+    padding-right: 0;
+    font-size: 1.1em;
+}
+
+.separator {
+    background: #D9D9D9;
+    height: 6px;
+    border-radius: 4px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: fixed;
+    bottom: 0;
+    width: 60%;
+}
+
+.footer menu {
+    padding: 0;
+}
+
+.footer-container {
+    grid-column: 4 / span 2;
+    justify-self: end;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.binput {
+    display: flex;
+    width: 250px;
+    background: #D9D9D9;
+    border-radius: 50px;
+    height: 25px;
+    padding: 2px;
+}
+
+input {
+    background: none;
+    border: none;
+    width: 100%;
+    padding-left: 10px;
+    height: 100%;
+    border-radius: 50px;
+    outline: none;
+}
+
+button {
+    width: 60px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    height: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e3e3e3;
+    transition: all 0.2s;
+}
