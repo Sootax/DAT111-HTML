@@ -127,8 +127,13 @@ button:hover {
 
 .content-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    height: 370px;
+    grid-template-columns: 400px 1fr;
     gap: 20px;
+}
+
+p {
+    line-height: 1.5em;
 }
 
 .story-container {
@@ -139,5 +144,5 @@ button:hover {
 
 img {
     width: 100%;
-    height: auto;
+    max-height: 100%;
 }
