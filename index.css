@@ -205,3 +205,32 @@ img {
   background-color: #ffffff;
   z-index: 0;
 }
+
+.skrivtiloss {
+  width: 110%;
+  height: 20%;
+  background-color: #ededed;
+  margin-left: 0px;
+  padding-left: 10px;
+}
+
+.ringoss{
+  width: 110%;
+  height: 6%;
+  background-color: #ededed;
+  margin-left: 0px;
+  padding-left: 10px;    
+}
+.samarbeid{
+  width: 110%;
+  height: 20%;
+  background-color: #ededed;
+  margin-left: 0px;
+  padding-left: 10px;
+h3 {
+  margin-bottom: 0.2em;  
+}  
+p{
+  margin-top: 0em;
+}
+}  
