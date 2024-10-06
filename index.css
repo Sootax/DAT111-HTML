@@ -4,11 +4,13 @@
 }
 
 body {
+  overflow-y: scroll;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 0;
   font-family: "Outfit", Arial, Helvetica, sans-serif;
   width: 60%;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -25,7 +27,7 @@ li a:hover {
   transition: all 0.2s;
 }
 
-.navbar {
+nav {
   display: grid;
   width: 100%;
   grid-template-rows: 1fr;
@@ -33,7 +35,7 @@ li a:hover {
   align-items: center;
 }
 
-.navbar menu {
+nav menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -50,12 +52,17 @@ li a:hover {
   margin-bottom: 10px;
 }
 
+.main {
+  flex: 1;
+}
+
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  position: fixed;
-  bottom: 0;
-  width: 60%;
+  background: white;
+  padding-top: 40px;
+  width: 100%;
+  margin-top: auto;
 }
 
 footer menu {
@@ -89,6 +96,13 @@ h4 {
   font-size: 1.2em;
   font-weight: bold;
   margin: 0;
+}
+
+h5 {
+  font-size: 0.9em;
+  font-weight: lighter;
+  margin: 0;
+  text-align: right;
 }
 
 .button-input {
@@ -140,7 +154,24 @@ p {
 .story-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: #ededed;
+  border-radius: 4px;
+  height: 485px;
+}
+
+.story h3 {
+  margin-top: 10px;
+}
+
+.story h5 {
+  margin-top: auto;
 }
 
 img {
@@ -149,65 +180,32 @@ img {
   max-height: 100%;
 }
 
-.container-løsninger {
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 300px;
-  z-index: -1;
-}
-
-.container-løsninger img {
-  border-radius: 5px;
-}
-
-.intro {
+.intro-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
-.intro-img img {
-  width: 100%;
-  height: auto;
-}
-
-.intro-img {
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
-
-.intro-text {
+.intro-positioning {
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
 }
 
 .løsninger {
+  height: 588px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 }
 
 .løsninger img {
-  margin-bottom: 30px;
-}
-
-.hvit-boks::before {
-  content: "";
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 130px;
-  background-color: #ffffff;
-  z-index: 0;
+  margin-bottom: 15px;
 }
 
 .skrivtiloss {
-  width: 110%;
+  width: 100%;
   height: 20%;
   background-color: #ededed;
   margin-left: 0px;
@@ -215,7 +213,7 @@ img {
 }
 
 .ringoss {
-  width: 110%;
+  width: 100%;
   height: 6%;
   background-color: #ededed;
   margin-left: 0px;
@@ -223,15 +221,11 @@ img {
 }
 
 .samarbeid {
-  width: 110%;
+  width: 100%;
   height: 20%;
   background-color: #ededed;
   margin-left: 0px;
   padding-left: 10px;
-h3 {
-  margin-bottom: 0.2em;  
-}  
-p{
-  margin-top: 0em;
 }
-}  
+
+
