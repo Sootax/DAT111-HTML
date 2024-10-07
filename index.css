@@ -228,6 +228,14 @@ img {
   padding-left: 10px;
 }
 
+.listeskrivtiloss {
+  li {
+    list-style-type: disc;
+  }
+  margin-left: -5px;
+  margin-top: -8px;
+}
+
 div#hoved {
   display: flex;
   gap: 10%;
