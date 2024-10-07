@@ -228,4 +228,22 @@ img {
   padding-left: 10px;
 }
 
+div#hoved {
+  display: flex;
+  gap: 10%;
+}
+div#hovedtekst {
+  width: 70%;
+}
+img.underbilde {
+  width: 80%;
+  height: 30%;
+}
+div.innholdsboks {
+  margin-bottom: 10%;
+}
+div.innholdsboks h3 {
+  margin-bottom: 5%;
+}
+
 
