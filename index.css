@@ -236,6 +236,10 @@ img {
   margin-top: -8px;
 }
 
+.tekstsamarbeid {
+  width: 95%
+}
+
 div#hoved {
   display: flex;
   gap: 10%;
